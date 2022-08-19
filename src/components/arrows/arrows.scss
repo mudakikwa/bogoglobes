@@ -1,0 +1,15 @@
+@import "../../sass/mixins.scss";
+#arrows{
+    display: flex;
+    justify-content: flex-end;
+    .wrapper{
+        gap:pxToVw(34);
+    }
+    svg{
+        width: pxToVw(94)!important;
+        height: auto;
+    }
+    .right-arrow{
+        transform: scaleX(-1);
+    }
+}
