@@ -1,0 +1,49 @@
+@import "../../sass/mixins.scss";
+#textures{
+    padding-left: pxToVw(30);
+    padding-bottom: pxToVw(30);
+    .title{
+        font-family: $euclidMedium;
+        font-weight: 500;
+        font-size: pxToVw(25);
+        line-height: 1;
+        text-align: left;
+        color: $black;
+        mix-blend-mode: darken;
+        margin-bottom: pxToVw(15);
+    }
+    .wrapper{
+        gap:pxToVw(18);
+        max-width: cacl(100% - pxToVw(30));
+        overflow-y: scroll;
+        @include scroll-bar-hidden;
+    }
+    .single-texture{
+        width: pxToVw(107);
+        min-width: pxToVw(107);
+        height: pxToVh(160);
+        min-height: pxToVh(160);
+        border-radius: 10px;
+        padding: 10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        background-color: rgba($color: $black, $alpha: 0.3);
+        background-blend-mode: overlay;
+        @include background-img;
+        .text{
+            font-family: $euclidMedium;
+            font-weight: 500;
+            font-size: pxToVw(50);
+            line-height: 1;
+            text-align: left;
+            color: $white;
+            // mix-blend-mode: difference;
+        }
+        .texture-name{
+            @extend .text;
+            font-size: pxToVw(12);
+            line-height: 1.3;
+        }
+    }
+}
