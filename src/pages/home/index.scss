@@ -9,6 +9,7 @@
         display: flex;
         flex-direction: column;
         justify-content: space-between;
+        padding: pxToVw(50) pxToVh(100);
         svg{
             width: pxToVw(60);
             height: auto;

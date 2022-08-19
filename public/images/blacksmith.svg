@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="265" height="265" viewBox="0 0 265 265">
+  <g id="blacksmith" transform="translate(751 400)">
+    <rect id="Rectangle_15" data-name="Rectangle 15" width="265" height="265" transform="translate(-751 -400)" fill="#010a0f"/>
+    <g id="profile" transform="translate(-694 -343)">
+      <g id="Group_24" data-name="Group 24" transform="translate(2 2)">
+        <path id="Path_8" data-name="Path 8" d="M140.161,74.92,95.782,55.493V22H55.59V55.493l-.419.208L11.224,74.92A16.7,16.7,0,0,0,2,89.017V99.035a3.349,3.349,0,0,0,3.349,3.349H146.022a3.349,3.349,0,0,0,3.349-3.349V89.017A16.676,16.676,0,0,0,140.161,74.92Z" transform="translate(-2 44.987)" fill="#f1e4e3" fill-rule="evenodd"/>
+        <path id="Path_9" data-name="Path 9" d="M49.843,89.083A36.886,36.886,0,0,1,13,52.24v-13.4a36.843,36.843,0,0,1,73.686,0v13.4A36.886,36.886,0,0,1,49.843,89.083Z" transform="translate(23.843 -2)" fill="#d4c7c6"/>
+      </g>
+    </g>
+  </g>
+</svg>

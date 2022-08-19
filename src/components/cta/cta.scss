@@ -1,0 +1,68 @@
+@import "../../sass/mixins.scss";
+
+#cta {
+    .wrapper {
+        max-width: 60%;
+    }
+
+    .pre-text {
+        font-family: $graphikRegular;
+        font-weight: normal;
+        font-size: pxToVw(20);
+        text-align: left;
+        color: $gray;
+    }
+
+    .main-text {
+        font-family: $euclidMedium;
+        font-weight: 500;
+        font-size: pxToVw(45);
+        line-height: 1.1;
+        text-align: left;
+        color: $white;
+        margin-bottom: pxToVh(15);
+    }
+
+    .desc-text {
+        font-family: $graphikRegular;
+        font-weight: normal;
+        font-size: pxToVw(20);
+        text-align: left;
+        color: $grayer;
+        line-height: 1.3;
+        width: 89%;
+        margin-bottom: pxToVh(40);
+    }
+    .btn-wrapper{
+        gap:pxToVw(33);
+    }
+    .custom-globe-btn {
+        border-radius: 100px;
+        background: $orange;
+        padding: pxToVw(5) pxToVw(25) pxToVw(5) pxToVw(5);
+
+        .d-flex {
+            align-content: center;
+            align-items: center;
+        }
+
+        .img {
+            width: pxToVw(50);
+            height: pxToVw(50);
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+            border-radius: 50%;
+            margin-right: 15px;
+        }
+
+        .btn-text {
+            font-family: $euclidMedium;
+            font-weight: 500;
+            font-size: pxToVw(20);
+            text-align: left;
+            color: $black;
+
+        }
+    }
+}
