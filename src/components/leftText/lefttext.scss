@@ -1,0 +1,27 @@
+@import "../../sass/mixins.scss";
+#left-text-counter{
+    display: flex;
+    justify-content: flex-end;
+    padding-right: pxToVw(50);
+    .wrapper{
+        gap:pxToVw(48);
+    }
+    .singleCounter{
+        .numbers{
+            font-family: $euclidMedium;
+            font-weight: 500;
+            font-size: pxToVw(75);
+            line-height: 1;
+            text-align: left;
+            margin-bottom: pxToVh(7.5);
+            color: $black;
+        }
+        .number-repr{
+            font-family: $euclidMedium;
+            font-weight: 500;
+            font-size: pxToVw(20);
+            text-align: left;
+            color: $black;
+        }
+    }
+}
