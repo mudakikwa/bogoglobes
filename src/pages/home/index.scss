@@ -1,16 +1,23 @@
-@import "../../sass/variables.scss";
+@import "../../sass/mixins.scss";
 #home{
     .left-size{
         min-width: 60vw;
         width: 60vw;
         min-height: 100vh;
         height: 100vh;
-        background-color: $black
+        background-color: $black;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        svg{
+            width: pxToVw(60);
+            height: auto;
+        }
     }
     .right-size{
         @extend .left-size;
-        min-width: 30vw;
-        width: 30vw;
+        min-width: 40vw;
+        width: 40vw;
         background-color: $white;
     }
 }
