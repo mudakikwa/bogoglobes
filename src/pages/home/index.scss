@@ -1,0 +1,16 @@
+@import "../../sass/variables.scss";
+#home{
+    .left-size{
+        min-width: 60vw;
+        width: 60vw;
+        min-height: 100vh;
+        height: 100vh;
+        background-color: $black
+    }
+    .right-size{
+        @extend .left-size;
+        min-width: 30vw;
+        width: 30vw;
+        background-color: $white;
+    }
+}
