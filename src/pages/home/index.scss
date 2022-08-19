@@ -10,9 +10,16 @@
         flex-direction: column;
         justify-content: space-between;
         padding: pxToVw(50) pxToVh(100);
+        padding-bottom: 0px;
+        padding-left: 0px;
+        padding-right: 0px;
         svg{
             width: pxToVw(60);
             height: auto;
+            margin-left: pxToVw(50);
+        }
+        #cta{
+           padding-left: pxToVw(50);
         }
     }
     .right-size{

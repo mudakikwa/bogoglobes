@@ -1,0 +1,28 @@
+@import "../../sass/mixins.scss";
+#planets{
+    min-width: 100%;
+    height: pxToVw(96);
+    background: $planetBlack;
+    display: flex;
+    align-content: center;
+    padding-left: pxToVw(50);
+    gap:pxToVw(33);
+    .single-planet{
+        align-content: center;
+        align-items: center;
+        gap:pxToVw(15);
+        .rounded-circle{
+            width: pxToVw(62);
+            height: pxToVw(62);
+            @include background-img;
+        }
+        .planet-text{
+            font-family: $euclidMedium;
+            font-weight: 500;
+            font-size: pxToVw(14);
+            line-height: 1;
+            text-align: left;
+            color: $white;
+        }
+    }
+}
