@@ -2,6 +2,7 @@
 #arrows{
     display: flex;
     justify-content: flex-end;
+    mix-blend-mode: difference;
     .wrapper{
         gap:pxToVw(34);
     }
