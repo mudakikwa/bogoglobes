@@ -2,6 +2,7 @@ import React from 'react'
 import Arrows from '../../components/arrows/Arrows'
 import Cta from '../../components/cta/Cta'
 import LeftTextCounter from '../../components/leftText/LeftTextCounter'
+import LeftWebGL from '../../components/leftWebGl/LeftWebGL'
 import Logo from '../../components/logo/Logo'
 import Planets from '../../components/planets/Planets'
 import Textures from '../../components/textures/Textures'
@@ -16,6 +17,7 @@ export default function Home() {
         <Planets /> 
       </div>
       <div className="right-size">
+        <LeftWebGL />
         <LeftTextCounter />
         <Arrows />
         <Textures />
