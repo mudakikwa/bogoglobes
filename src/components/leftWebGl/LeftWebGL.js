@@ -24,8 +24,8 @@ export default function LeftWebGL() {
             width: canvas.getBoundingClientRect().width,
             height: canvas.getBoundingClientRect().height
         }
+        const handleResize=()=>{
 
-        window.addEventListener('resize', () => {
             // Update sizes
             sizes.width = canvas.getBoundingClientRect().width
             sizes.height = canvas.getBoundingClientRect().height
@@ -37,7 +37,9 @@ export default function LeftWebGL() {
             // Update renderer
             renderer.setSize(sizes.width, sizes.height)
             renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2))
-        })
+        }
+        window.removeEventListener('resize', handleResize)
+        window.addEventListener('resize', handleResize)
 
         /**
          * Camera
@@ -103,9 +105,46 @@ export default function LeftWebGL() {
         }
 
         tick()
+
+        const cleanScene = () => {
+            try {
+                const cleanMaterial = material => {
+                    material.dispose()
+
+                    // dispose textures
+                    for (const key of Object.keys(material)) {
+                        const value = material[key]
+                        if (value && typeof value === 'object' && 'minFilter' in value) {
+                            value.dispose()
+                        }
+                    }
+                }
+                let disposeList = []
+                scene.traverse((child) => {
+                    if (child.isMesh) {
+                        disposeList.push({
+                            geometry: child.geometry,
+                            material: child.material,
+                        })
+                    }
+                });
+                disposeList.forEach(o => {
+                    o.geometry.dispose()
+                    cleanMaterial(o.material)
+                });
+                disposeList = []
+                window.removeEventListener('resize', handleResize)
+            }
+            catch (e) {
+                console.log("error", e)
+            }
+        }
+        return ()=>{
+            cleanScene()
+        }
     }, [])
 
     return (
-        <canvas class="webgl"></canvas>
+        <canvas className="webgl"></canvas>
     )
 }
