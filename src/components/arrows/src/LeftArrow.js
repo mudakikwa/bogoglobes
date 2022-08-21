@@ -6,11 +6,11 @@ export default function LeftArrow() {
           <g id="Group_11" data-name="Group 11" transform="translate(-1667 -425)">
               <g id="arrow-left" transform="translate(1675 432)">
                   <g id="Group_10" data-name="Group 10">
-                      <path id="Path_2" data-name="Path 2" d="M86.328,12H5" fill="none" stroke="#f13e2f" stroke-linecap="round" stroke-linejoin="round" stroke-width="1" />
-                      <path id="Path_3" data-name="Path 3" d="M12,19,5,12l7-7" fill="none" stroke="#f13e2f" stroke-linecap="round" stroke-linejoin="round" stroke-width="1" />
+                      <path id="Path_2" data-name="Path 2" d="M86.328,12H5" fill="none" stroke="#f13e2f" strokeLinecap="round" strokeLinejoin="round" strokeWidth="1" />
+                      <path id="Path_3" data-name="Path 3" d="M12,19,5,12l7-7" fill="none" stroke="#f13e2f" strokeLinecap="round" strokeLinejoin="round" strokeWidth="1" />
                   </g>
               </g>
-              <g id="Ellipse_8" data-name="Ellipse 8" transform="translate(1667 425)" fill="none" stroke="#f13e2f" stroke-width="1">
+              <g id="Ellipse_8" data-name="Ellipse 8" transform="translate(1667 425)" fill="none" stroke="#f13e2f" strokeWidth="1">
                   <circle cx="19.5" cy="19.5" r="19.5" stroke="none" />
                   <circle cx="19.5" cy="19.5" r="19" fill="none" />
               </g>

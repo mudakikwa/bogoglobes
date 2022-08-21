@@ -41,7 +41,7 @@ export default function Textures() {
             <div className="title">Optional Textures </div>
             <div className="wrapper d-flex">
                 {data.map((item,idx)=>{
-                    return <SingleTexture number={idx+1} text={item.text} background={item.background} />
+                    return <SingleTexture number={idx+1} text={item.text} background={item.background} key={idx} />
                 })}
             </div>
         </div>
