@@ -25,6 +25,7 @@
     "sass": "^1.54.4",
     "stats.js": "^0.17.0",
     "three": "^0.139.2",
+    "three-globe": "^2.24.7",
     "web-vitals": "^2.1.4"
   },
   "scripts": {
