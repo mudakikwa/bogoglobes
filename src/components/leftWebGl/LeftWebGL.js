@@ -59,7 +59,6 @@ export default function LeftWebGL() {
          * Cube
          */
         liquidMaterial = LiquidShader(sizes.width, sizes.height, "#F13E2F", "#F1E4E3")
-        console.log(liquidMaterial.uniforms["u_time"].value, counter)
         if (liquidMaterial.uniforms["u_time"]?.value) {
             liquidMaterial.uniforms["u_time"].value = counter;
             liquidMaterial.uniforms["u_resolution"].value = new THREE.Vector2(sizes.width, sizes.height);

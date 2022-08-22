@@ -1,12 +1,12 @@
 @import "../../sass/mixins.scss";
 #spheregl{
-    $height:700;
+    $height:1000;
     min-height: pxToVw($height);
     min-width: pxToVw($height);
     max-height: pxToVw($height);
     max-width: pxToVw($height);
-    background-color: $orange;
-    border-radius: 50%;
+    background-color: rgba($color: white, $alpha: 0.0);
+    border-radius: 0%;
     position: fixed;
     top:0;
     left:calc(60vw - pxToVw($height/2));
